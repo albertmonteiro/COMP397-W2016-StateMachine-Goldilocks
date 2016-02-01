@@ -65,10 +65,9 @@ function setupStats():void {
 
 // Finite State Machine used to change Scenes
 function changeScene(): void {
-    
+    console.log("Entering switch statement...");
     // Launch various scenes
     switch (scene) {
-        console.log("Inside switch statement...");
         case config.Scene.MENU:
             // show the MENU scene
             stage.removeAllChildren();
