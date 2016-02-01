@@ -12,7 +12,7 @@ var scene:number;
 var menu:scenes.Menu;
 var play:scenes.Play;
 var over:scenes.Over;
-var one:scene.One;
+var one:scenes.One;
 
 function init():void {
     // create a reference the HTML canvas Element
