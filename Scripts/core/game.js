@@ -7,7 +7,7 @@ var currentScene;
 var scene;
 // Game Scenes
 var menu;
-var play;
+var play1;
 var over;
 function init() {
     // create a reference the HTML canvas Element

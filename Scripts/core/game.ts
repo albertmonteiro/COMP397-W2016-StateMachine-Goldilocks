@@ -10,7 +10,7 @@ var scene:number;
 
 // Game Scenes
 var menu:scenes.Menu;
-var play:scenes.Play;
+var play1:scenes.Play1;
 var over:scenes.Over;
 
 function init():void {
