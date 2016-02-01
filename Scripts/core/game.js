@@ -60,8 +60,8 @@ function changeScene() {
         case config.Scene.PLAY:
             // show the PLAY scene
             stage.removeAllChildren();
-            play = new scenes.Play();
-            currentScene = play;
+            play1 = new scenes.Play1();
+            currentScene = play1;
             console.log("Starting PLAY Scene");
             break;
         case config.Scene.OVER:
@@ -74,4 +74,3 @@ function changeScene() {
     }
     console.log(currentScene.numChildren);
 }
-//# sourceMappingURL=game.js.map

@@ -77,8 +77,8 @@ function changeScene(): void {
         case config.Scene.PLAY:
             // show the PLAY scene
             stage.removeAllChildren();
-            play = new scenes.Play();
-            currentScene = play;
+            play1 = new scenes.Play1();
+            currentScene = play1;
             console.log("Starting PLAY Scene");
             break;
         case config.Scene.OVER:
