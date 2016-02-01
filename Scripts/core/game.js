@@ -51,34 +51,35 @@ function setupStats() {
 function changeScene() {
     // Launch various scenes
     switch (scene) {
-        case config.Scene.MENU:
-            // show the MENU scene
-            stage.removeAllChildren();
-            menu = new scenes.Menu();
-            currentScene = menu;
-            console.log("Starting MENU Scene");
-            break;
-        case config.Scene.ONE:
-            // show the PLAY scene
-            stage.removeAllChildren();
-            one = new scenes.One();
-            currentScene = one;
-            console.log("Starting ONE Scene");
-            break;
-        case config.Scene.PLAY:
-            // show the PLAY scene
-            stage.removeAllChildren();
-            one = new scenes.One();
-            currentScene = one;
-            console.log("Starting ONE Scene");
-            break;
-        case config.Scene.OVER:
-            // show the game OVER scene
-            stage.removeAllChildren();
-            over = new scenes.Over();
-            currentScene = over;
-            console.log("Starting OVER Scene");
-            break;
     }
-    console.log(currentScene.numChildren);
+    console.log("Inside switch statement...");
+    config.Scene.MENU;
+    // show the MENU scene
+    stage.removeAllChildren();
+    menu = new scenes.Menu();
+    currentScene = menu;
+    console.log("Starting MENU Scene");
+    break;
+    config.Scene.ONE;
+    // show the PLAY scene
+    stage.removeAllChildren();
+    one = new scenes.One();
+    currentScene = one;
+    console.log("Starting ONE Scene");
+    break;
+    config.Scene.PLAY;
+    // show the PLAY scene
+    stage.removeAllChildren();
+    play = new scenes.Play();
+    currentScene = play;
+    console.log("Starting PLAY Scene");
+    break;
+    config.Scene.OVER;
+    // show the game OVER scene
+    stage.removeAllChildren();
+    over = new scenes.Over();
+    currentScene = over;
+    console.log("Starting OVER Scene");
+    break;
 }
+console.log(currentScene.numChildren);

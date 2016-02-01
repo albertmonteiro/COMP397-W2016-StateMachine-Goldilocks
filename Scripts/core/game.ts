@@ -68,6 +68,7 @@ function changeScene(): void {
     
     // Launch various scenes
     switch (scene) {
+        console.log("Inside switch statement...");
         case config.Scene.MENU:
             // show the MENU scene
             stage.removeAllChildren();
@@ -85,9 +86,9 @@ function changeScene(): void {
         case config.Scene.PLAY:
             // show the PLAY scene
             stage.removeAllChildren();
-            one = new scenes.One();
-            currentScene = one;
-            console.log("Starting ONE Scene");
+            play = new scenes.Play();
+            currentScene = play;
+            console.log("Starting PLAY Scene");
             break;
         case config.Scene.OVER:
             // show the game OVER scene
