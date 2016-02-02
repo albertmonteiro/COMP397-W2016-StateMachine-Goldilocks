@@ -86,15 +86,15 @@ function changeScene(): void {
         case config.Scene.TWO:
             // show the PLAY scene
             stage.removeAllChildren();
-            one = new scenes.One();
-            currentScene = one;
+            two = new scenes.Two();
+            currentScene = two;
             console.log("Starting TWO Scene");
             break;
         case config.Scene.THREE:
             // show the PLAY scene
             stage.removeAllChildren();
-            one = new scenes.One();
-            currentScene = one;
+            three = new scenes.Three();
+            currentScene = three;
             console.log("Starting THREE Scene");
             break;
         // case config.Scene.PLAY:
