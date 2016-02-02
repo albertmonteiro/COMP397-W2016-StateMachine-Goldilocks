@@ -10,11 +10,23 @@ var scene:number;
 
 // Game Scenes
 var menu:scenes.Menu;
-var play:scenes.Play;
+// var play:scenes.Play;
 var over:scenes.Over;
 var one:scenes.One;
 var two:scenes.Two;
 var three:scenes.Three;
+var three:scenes.Four;
+var three:scenes.Five;
+var three:scenes.Six;
+var three:scenes.Seven;
+var three:scenes.Eight;
+var three:scenes.Nine;
+var three:scenes.Ten;
+var three:scenes.Eleven;
+var three:scenes.Twelve;
+var three:scenes.Thirteen;
+var three:scenes.Fourteen;
+var three:scenes.Fifteen;
 
 function init():void {
     // create a reference the HTML canvas Element
@@ -96,6 +108,90 @@ function changeScene(): void {
             three = new scenes.Three();
             currentScene = three;
             console.log("Starting THREE Scene");
+            break;
+        case config.Scene.FOUR:
+            // show the PLAY scene
+            stage.removeAllChildren();
+            four = new scenes.Four();
+            currentScene = four;
+            console.log("Starting FOUR Scene");
+            break;
+        case config.Scene.FIVE:
+            // show the PLAY scene
+            stage.removeAllChildren();
+            five = new scenes.Five();
+            currentScene = five;
+            console.log("Starting FIVE Scene");
+            break;
+        case config.Scene.SIX:
+            // show the PLAY scene
+            stage.removeAllChildren();
+            six = new scenes.Six();
+            currentScene = six;
+            console.log("Starting SIX Scene");
+            break;
+        case config.Scene.SEVEN:
+            // show the PLAY scene
+            stage.removeAllChildren();
+            seven = new scenes.Seven();
+            currentScene = seven;
+            console.log("Starting SEVEN Scene");
+            break;
+        case config.Scene.EIGHT:
+            // show the PLAY scene
+            stage.removeAllChildren();
+            eight = new scenes.Eight();
+            currentScene = eight;
+            console.log("Starting EIGHT Scene");
+            break;
+        case config.Scene.NINE:
+            // show the PLAY scene
+            stage.removeAllChildren();
+            nine = new scenes.Nine();
+            currentScene = nine;
+            console.log("Starting NINE Scene");
+            break;
+        case config.Scene.TEN:
+            // show the PLAY scene
+            stage.removeAllChildren();
+            ten = new scenes.Ten();
+            currentScene = ten;
+            console.log("Starting TEN Scene");
+            break;
+        case config.Scene.ELEVEN:
+            // show the PLAY scene
+            stage.removeAllChildren();
+            eleven = new scenes.Eleven();
+            currentScene = eleven;
+            console.log("Starting ELEVEN Scene");
+            break;
+        case config.Scene.TWELVE:
+            // show the PLAY scene
+            stage.removeAllChildren();
+            twelve = new scenes.Twelve();
+            currentScene = twelve;
+            console.log("Starting TWELVE Scene");
+            break;
+        case config.Scene.THIRTEEN:
+            // show the PLAY scene
+            stage.removeAllChildren();
+            thirteen = new scenes.Thirteen();
+            currentScene = thirteen;
+            console.log("Starting THIRTEEN Scene");
+            break;
+        case config.Scene.FOURTEEN:
+            // show the PLAY scene
+            stage.removeAllChildren();
+            fourteen = new scenes.Fourteen();
+            currentScene = fourteen;
+            console.log("Starting FOURTEEN Scene");
+            break;
+        case config.Scene.FIFTEEN:
+            // show the PLAY scene
+            stage.removeAllChildren();
+            fifteen = new scenes.Fifteen();
+            currentScene = fifteen;
+            console.log("Starting FIFTEEN Scene");
             break;
         // case config.Scene.PLAY:
         //     // show the PLAY scene

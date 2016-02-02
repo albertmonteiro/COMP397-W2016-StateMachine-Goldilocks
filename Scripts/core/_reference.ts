@@ -12,7 +12,6 @@
 /// <reference path="../scenes/one.ts" />
 /// <reference path="../scenes/two.ts" />
 /// <reference path="../scenes/three.ts" />
-/*
 /// <reference path="../scenes/four.ts" />
 /// <reference path="../scenes/five.ts" />
 /// <reference path="../scenes/six.ts" />
@@ -25,4 +24,3 @@
 /// <reference path="../scenes/thirteen.ts" />
 /// <reference path="../scenes/fourteen.ts" />
 /// <reference path="../scenes/fifteen.ts" />
-*/

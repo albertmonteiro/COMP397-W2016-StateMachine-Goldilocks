@@ -42,14 +42,12 @@ var scenes;
         // NEXT Button click event handler
         One.prototype._leftButtonClick = function (event) {
             // Switch to the OVER Scene
-            console.log("Inside left button");
             scene = config.Scene.TWO;
             changeScene();
         };
         // BACK Button click event handler
         One.prototype._rightButtonClick = function (event) {
             // Switch to the OVER Scene
-            console.log("Inside right button");
             scene = config.Scene.THREE;
             changeScene();
         };

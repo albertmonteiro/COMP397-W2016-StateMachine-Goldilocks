@@ -59,7 +59,6 @@ module scenes {
         // NEXT Button click event handler
         private _leftButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            console.log("Inside left button");
             scene = config.Scene.TWO;
             changeScene();
         }
@@ -67,7 +66,6 @@ module scenes {
         // BACK Button click event handler
         private _rightButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            console.log("Inside right button");
             scene = config.Scene.THREE;
             changeScene();
         }
