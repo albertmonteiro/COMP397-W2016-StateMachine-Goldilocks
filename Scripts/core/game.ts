@@ -65,7 +65,6 @@ function setupStats():void {
 
 // Finite State Machine used to change Scenes
 function changeScene(): void {
-    console.log("Entering switch statement...");
     // Launch various scenes
     switch (scene) {
         case config.Scene.MENU:
