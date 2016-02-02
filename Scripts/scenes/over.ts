@@ -25,7 +25,7 @@ module scenes {
 
             // add the BACK button to the OVER scene
             this._backButton = new objects.Button(
-                "BackButton",
+                "StartOverButton",
                 config.Screen.CENTER_X,
                 config.Screen.CENTER_Y + 60);
             this.addChild(this._backButton);
@@ -49,7 +49,7 @@ module scenes {
         // BACK Button click event handler
         private _backButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.PLAY;
+            scene = config.Scene.MENU;
             changeScene();
         }
     }

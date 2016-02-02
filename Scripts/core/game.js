@@ -10,6 +10,8 @@ var menu;
 var play;
 var over;
 var one;
+var two;
+var three;
 function init() {
     // create a reference the HTML canvas Element
     canvas = document.getElementById("canvas");
@@ -65,13 +67,27 @@ function changeScene() {
             currentScene = one;
             console.log("Starting ONE Scene");
             break;
-        case config.Scene.PLAY:
+        case config.Scene.TWO:
             // show the PLAY scene
             stage.removeAllChildren();
-            play = new scenes.Play();
-            currentScene = play;
-            console.log("Starting PLAY Scene");
+            one = new scenes.One();
+            currentScene = one;
+            console.log("Starting TWO Scene");
             break;
+        case config.Scene.THREE:
+            // show the PLAY scene
+            stage.removeAllChildren();
+            one = new scenes.One();
+            currentScene = one;
+            console.log("Starting THREE Scene");
+            break;
+        // case config.Scene.PLAY:
+        //     // show the PLAY scene
+        //     stage.removeAllChildren();
+        //     play = new scenes.Play();
+        //     currentScene = play;
+        //     console.log("Starting PLAY Scene");
+        //     break;
         case config.Scene.OVER:
             // show the game OVER scene
             stage.removeAllChildren();

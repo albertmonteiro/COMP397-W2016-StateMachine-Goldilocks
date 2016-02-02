@@ -13,6 +13,8 @@ var menu:scenes.Menu;
 var play:scenes.Play;
 var over:scenes.Over;
 var one:scenes.One;
+var two:scenes.Two;
+var three:scenes.Three;
 
 function init():void {
     // create a reference the HTML canvas Element
@@ -81,13 +83,27 @@ function changeScene(): void {
             currentScene = one;
             console.log("Starting ONE Scene");
             break;
-        case config.Scene.PLAY:
+        case config.Scene.TWO:
             // show the PLAY scene
             stage.removeAllChildren();
-            play = new scenes.Play();
-            currentScene = play;
-            console.log("Starting PLAY Scene");
+            one = new scenes.One();
+            currentScene = one;
+            console.log("Starting TWO Scene");
             break;
+        case config.Scene.THREE:
+            // show the PLAY scene
+            stage.removeAllChildren();
+            one = new scenes.One();
+            currentScene = one;
+            console.log("Starting THREE Scene");
+            break;
+        // case config.Scene.PLAY:
+        //     // show the PLAY scene
+        //     stage.removeAllChildren();
+        //     play = new scenes.Play();
+        //     currentScene = play;
+        //     console.log("Starting PLAY Scene");
+        //     break;
         case config.Scene.OVER:
             // show the game OVER scene
             stage.removeAllChildren();

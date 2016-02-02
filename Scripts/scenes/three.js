@@ -6,15 +6,15 @@ var __extends = (this && this.__extends) || function (d, b) {
 // PLAY SCENE
 var scenes;
 (function (scenes) {
-    var One = (function (_super) {
-        __extends(One, _super);
+    var Three = (function (_super) {
+        __extends(Three, _super);
         // CONSTRUCTOR ++++++++++++++++++++++
-        function One() {
+        function Three() {
             _super.call(this);
         }
         // PUBLIC METHODS +++++++++++++++++++++
         // Start Method
-        One.prototype.start = function () {
+        Three.prototype.start = function () {
             // add the PLAY label to the scene
             this._playLabel = new createjs.Text("Albert's scene", "60px Consolas", "#000000");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
@@ -36,22 +36,22 @@ var scenes;
             stage.addChild(this);
         };
         // PLAY Scene updates here
-        One.prototype.update = function () {
+        Three.prototype.update = function () {
         };
         //EVENT HANDLERS ++++++++++++++++++++
         // NEXT Button click event handler
-        One.prototype._leftButtonClick = function (event) {
+        Three.prototype._leftButtonClick = function (event) {
             // Switch to the OVER Scene
-            scene = config.Scene.TWO;
+            scene = config.Scene.OVER;
             changeScene();
         };
         // BACK Button click event handler
-        One.prototype._rightButtonClick = function (event) {
+        Three.prototype._rightButtonClick = function (event) {
             // Switch to the OVER Scene
-            scene = config.Scene.THREE;
+            scene = config.Scene.OVER;
             changeScene();
         };
-        return One;
+        return Three;
     })(objects.Scene);
-    scenes.One = One;
+    scenes.Three = Three;
 })(scenes || (scenes = {}));

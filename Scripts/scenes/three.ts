@@ -1,20 +1,21 @@
-var __extends = (this && this.__extends) || function (d, b) {
-    for (var p in b) if (b.hasOwnProperty(p)) d[p] = b[p];
-    function __() { this.constructor = d; }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-};
 // PLAY SCENE
-var scenes;
-(function (scenes) {
-    var One = (function (_super) {
-        __extends(One, _super);
+module scenes {
+    export class Three extends objects.Scene {
+        //PRIVATE INSTANCE VARIABLES ++++++++++++
+        private _playLabel: createjs.Text;
+        private _leftButton: objects.Button;
+        private _rightButton: objects.Button;
+        
         // CONSTRUCTOR ++++++++++++++++++++++
-        function One() {
-            _super.call(this);
+        constructor() {
+            super();
         }
+        
         // PUBLIC METHODS +++++++++++++++++++++
+        
         // Start Method
-        One.prototype.start = function () {
+        public start(): void {
+
             // add the PLAY label to the scene
             this._playLabel = new createjs.Text("Albert's scene", "60px Consolas", "#000000");
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
@@ -22,36 +23,51 @@ var scenes;
             this._playLabel.x = config.Screen.CENTER_X;
             this._playLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._playLabel);
+
             // add the LEFT button to the PLAY scene
-            this._leftButton = new objects.Button("LeftButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 60);
+            this._leftButton = new objects.Button(
+                "LeftButton",
+                config.Screen.CENTER_X - 100,
+                config.Screen.CENTER_Y + 60);
             this.addChild(this._leftButton);
             // LEFT Button event listener
             this._leftButton.on("click", this._leftButtonClick, this);
+
             // add the RIGHT button to the PLAY scene
-            this._rightButton = new objects.Button("RightButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 60);
+            this._rightButton = new objects.Button(
+                "RightButton",
+                config.Screen.CENTER_X + 100,
+                config.Screen.CENTER_Y + 60);
             this.addChild(this._rightButton);
+           
             // RIGHT Button event listener
             this._rightButton.on("click", this._rightButtonClick, this);
+
+
             // add this scene to the global stage container
             stage.addChild(this);
-        };
+        }
+
         // PLAY Scene updates here
-        One.prototype.update = function () {
-        };
+        public update(): void {
+
+        }
+        
+        
         //EVENT HANDLERS ++++++++++++++++++++
+        
         // NEXT Button click event handler
-        One.prototype._leftButtonClick = function (event) {
+        private _leftButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.TWO;
+            scene = config.Scene.OVER;
             changeScene();
-        };
+        }
+        
         // BACK Button click event handler
-        One.prototype._rightButtonClick = function (event) {
+        private _rightButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.THREE;
+            scene = config.Scene.OVER;
             changeScene();
-        };
-        return One;
-    })(objects.Scene);
-    scenes.One = One;
-})(scenes || (scenes = {}));
+        }
+    }
+}

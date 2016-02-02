@@ -59,14 +59,14 @@ module scenes {
         // NEXT Button click event handler
         private _leftButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.PLAY;
+            scene = config.Scene.TWO;
             changeScene();
         }
         
         // BACK Button click event handler
         private _rightButtonClick(event: createjs.MouseEvent) {
             // Switch to the OVER Scene
-            scene = config.Scene.MENU;
+            scene = config.Scene.THREE;
             changeScene();
         }
     }
