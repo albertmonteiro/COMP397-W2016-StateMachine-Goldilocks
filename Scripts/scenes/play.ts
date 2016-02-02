@@ -1,3 +1,4 @@
+/*
 // PLAY SCENE
 module scenes {
     export class Play extends objects.Scene {
@@ -72,3 +73,4 @@ module scenes {
         }
     }
 }
+*/
