@@ -13,7 +13,7 @@ var objects;
             this.x = x;
             this.y = y;
             this.width = 150;
-            this.height = 50;
+            this.height = 50
             this.regX = this.width * 0.5;
             this.regY = this.height * 0.5;
             this.on("mouseover", this.overButton, this);
