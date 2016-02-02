@@ -5,8 +5,11 @@ var config;
         function Scene() {
         }
         Scene.MENU = 0;
-        Scene.PLAY = 1;
-        Scene.OVER = 2;
+        // public static PLAY: number = 1;
+        Scene.ONE = 1;
+        Scene.TWO = 2;
+        Scene.THREE = 2;
+        Scene.OVER = 3;
         return Scene;
     })();
     config.Scene = Scene;
@@ -30,4 +33,3 @@ var config;
     })();
     config.Game = Game;
 })(config || (config = {}));
-//# sourceMappingURL=config.js.map
