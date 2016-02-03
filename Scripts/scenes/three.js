@@ -22,10 +22,10 @@ var scenes;
             this._playLabel.text += "You are faced with yet another decision. \n\n";
             this._playLabel.text = "The road going LEFT seems way too dark and the road going RIGHT is wet and mucky.  \n\n";
             this._playLabel.text = "Do you go LEFT or do you go RIGHT? \n\n";
-            this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
-            this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
-            this._playLabel.x = config.Screen.CENTER_X;
-            this._playLabel.y = config.Screen.CENTER_Y;
+            // this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
+            // this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
+            // this._playLabel.x = config.Screen.CENTER_X;
+            // this._playLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._playLabel);
             // add the LEFT button to the PLAY scene
             this._leftButton = new objects.Button("LeftButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 170);

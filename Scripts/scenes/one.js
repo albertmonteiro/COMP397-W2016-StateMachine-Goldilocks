@@ -27,7 +27,7 @@ var scenes;
             // this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
             // this._playLabel.x = config.Screen.CENTER_X;
             // this._playLabel.y = config.Screen.CENTER_Y;
-            // this.addChild(this._playLabel);
+            this.addChild(this._playLabel);
             // add the LEFT button to the PLAY scene
             this._leftButton = new objects.Button("LeftButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 170);
             this.addChild(this._leftButton);

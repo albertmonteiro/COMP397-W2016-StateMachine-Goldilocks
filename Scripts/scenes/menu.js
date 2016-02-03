@@ -16,8 +16,8 @@ var scenes;
         // Start Method
         Menu.prototype.start = function () {
             // add the MENU label to the scene
-            this._gameLabel = new createjs.Text("", "40px Consolas", "#000000");
-            this._gameLabel.text = "Hello, and welcome to GOLDILOCKS quest! \n\n";
+            this._gameLabel = new createjs.Text("", "30px Consolas", "#000000");
+            this._gameLabel.text = "Welcome to GOLDILOCKS quest! \n\n";
             this._gameLabel.regX = this._gameLabel.getMeasuredWidth() * 0.5;
             this._gameLabel.regY = this._gameLabel.getMeasuredHeight() * 0.5;
             this._gameLabel.x = config.Screen.CENTER_X;
