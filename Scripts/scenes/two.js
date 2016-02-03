@@ -16,7 +16,7 @@ var scenes;
         // Start Method
         Two.prototype.start = function () {
             // add the PLAY label to the scene
-            this._playLabel = new createjs.Text("", "14px Consolas", "#000000");
+            this._playLabel = new createjs.Text("", "20px Consolas", "#000000");
             // this._playLabel.text = "You continue \n\n";
             // this._playLabel.text += "You have been \n\n";
             this._playLabel.text = "You continue your quest for the HOT CHOCOLATE. \n\n";
