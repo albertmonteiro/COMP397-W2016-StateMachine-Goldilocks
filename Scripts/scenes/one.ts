@@ -19,10 +19,14 @@ module scenes {
             // add the PLAY label to the scene
             this._playLabel = new createjs.Text("", "20px Consolas", "#000000");
             this._playLabel.text += "You are Goldilocks and you are walking through the woods. \n\n";
-            this._playLabel.text += "All of a sudden you get the sweet smell of some HOT CHOCOLATE. \n\n";
-            this._playLabel.text += "Even though you know there are bears in the woods, you decide to follow the smell. \n\n";
-            this._playLabel.text += "You have been walking for a while when you come upon an intersection. \n\n";
-            this._playLabel.text += "The road going left looks darker than the road going right. \n\n";
+            this._playLabel.text += "All of a sudden you smell something very sweet. \n\n";
+            this._playLabel.text += "It's the smell of some HOT CHOCOLATE. \n\n";
+            this._playLabel.text += "Even though you know there are BEARS in the woods, \n\n";
+            this._playLabel.text += "you decide to follow the smell. \n\n";
+            this._playLabel.text += "\n\n";
+            this._playLabel.text += "You have been walking for a while when you come upon an \n\n";
+            this._playLabel.text += "intersection. \n\n";
+            this._playLabel.text += "The road going left looks darker than the one going right. \n\n";
             this._playLabel.text += "What do you do? Do you go LEFT or do you go RIGHT? \n\n";
             // this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
             // this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
