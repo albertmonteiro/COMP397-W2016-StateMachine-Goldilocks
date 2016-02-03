@@ -16,7 +16,9 @@ module scenes {
         public start(): void {
             
             // add the MENU label to the scene
-            this._gameLabel = new createjs.Text("Menu Scene", "60px Consolas", "#000000");
+            this._gameLabel = new createjs.Text("", "14px Consolas", "#000000");
+            this._gameLabel.text = "Main screen \n\n";
+            this._gameLabel.text += "Are you ready?";
             this._gameLabel.regX = this._gameLabel.getMeasuredWidth() * 0.5;
             this._gameLabel.regY = this._gameLabel.getMeasuredHeight() * 0.5;
             this._gameLabel.x = config.Screen.CENTER_X;
@@ -25,9 +27,9 @@ module scenes {
 
             // add the START button to the MENU scene
             this._startButton = new objects.Button(
-                "StartButton",
+                "StartButton", 
                 config.Screen.CENTER_X, 
-                config.Screen.CENTER_Y + 60);
+                config.Screen.CENTER_Y + 170);
             this.addChild(this._startButton);
             
             // START Button event listener

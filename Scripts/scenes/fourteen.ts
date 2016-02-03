@@ -28,7 +28,7 @@ module scenes {
 
             // add the LEFT button to the PLAY scene
             this._leftButton = new objects.Button(
-                "LeftButton",
+                "SadFace",
                 config.Screen.CENTER_X - 100,
                 config.Screen.CENTER_Y + 170);
             this.addChild(this._leftButton);
@@ -37,7 +37,7 @@ module scenes {
 
             // add the RIGHT button to the PLAY scene
             this._rightButton = new objects.Button(
-                "RightButton",
+                "StartOverButton",
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 170);
             this.addChild(this._rightButton);
