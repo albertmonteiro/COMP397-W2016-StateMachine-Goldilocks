@@ -22,6 +22,7 @@ module scenes {
             this._playLabel.text += "You have been walking for a while now. \n\n";
             this._playLabel.text += "You are faced with yet another decision. \n\n";
             this._playLabel.text += "You have to choose from between two roads again. \n\n";
+            this._playLabel.text += "\n\n";
             this._playLabel.text += "The road going LEFT is well lit up; however, the road \n\n";
             this._playLabel.text += "going RIGHT has a strong smell of hot chocolate but you \n\n";
             this._playLabel.text += "can hear the sound of a bear coming from this road. \n\n";

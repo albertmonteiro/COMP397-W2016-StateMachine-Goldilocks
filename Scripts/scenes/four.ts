@@ -18,13 +18,20 @@ module scenes {
 
             // add the PLAY label to the scene
             this._playLabel = new createjs.Text("", "14px Consolas", "#000000");
-            this._playLabel.text += "You are Goldilocks and you are walking through the woods. \n\n";
-            this._playLabel.text = "hello world \n\n";
-            this._playLabel.text += "this is albert";
-            this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
-            this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
-            this._playLabel.x = config.Screen.CENTER_X;
-            this._playLabel.y = config.Screen.CENTER_Y;
+            this._playLabel.text = "You chose to take the bright lit up road. \n\n";
+            this._playLabel.text += "You keep walking through the woods. \n\n";
+            this._playLabel.text += "It's getting dark and scary. You are afraid but you want \n\n";
+            this._playLabel.text += "to get to the hot chocolate. \n\n";
+            this._playLabel.text += "\n\n";
+            this._playLabel.text += "You come across another intersection. \n\n";
+            this._playLabel.text += "The road going LEFT seems nice. It is red in color. \n\n";
+            this._playLabel.text += "The road going RIGHT is also nice and it is blue in \n\n";
+            this._playLabel.text += "color. \n\n";
+            this._playLabel.text += "Do you go LEFT or do you go RIGHT? \n\n";
+            // this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
+            // this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
+            // this._playLabel.x = config.Screen.CENTER_X;
+            // this._playLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._playLabel);
 
             // add the LEFT button to the PLAY scene
