@@ -20,7 +20,7 @@ module scenes {
             this._playLabel = new createjs.Text("", "14px Consolas", "#000000");
             // this._playLabel.text = "You continue \n\n";
             // this._playLabel.text += "You have been \n\n";
-            this._playLabel.textBaseline = "You continue your quest for the HOT CHOCOLATE. \n\n";
+            this._playLabel.text = "You continue your quest for the HOT CHOCOLATE. \n\n";
             this._playLabel.text += "You have been walking for a while now. \n\n";
             // this._playLabel.text += "You are faced with yet another decision. \n\n";
             // this._playLabel.text += "You have to choose from between two roads again. \n\n";
