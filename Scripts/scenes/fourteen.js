@@ -43,14 +43,14 @@ var scenes;
         //EVENT HANDLERS ++++++++++++++++++++
         // NEXT Button click event handler
         Fourteen.prototype._leftButtonClick = function (event) {
-            // Switch to the TWO Scene
-            scene = config.Scene.TWO;
-            changeScene();
+            // Switch to the NULL Scene
+            // scene = config.Scene.TWO;
+            // changeScene();
         };
         // BACK Button click event handler
         Fourteen.prototype._rightButtonClick = function (event) {
-            // Switch to the THREE Scene
-            scene = config.Scene.THREE;
+            // Switch to the MENU Scene
+            scene = config.Scene.MENU;
             changeScene();
         };
         return Fourteen;
