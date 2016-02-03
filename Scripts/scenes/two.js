@@ -16,7 +16,10 @@ var scenes;
         // Start Method
         Two.prototype.start = function () {
             // add the PLAY label to the scene
-            this._playLabel = new createjs.Text("You continue your quest for the HOT CHOCOLATE. \r\n You have been walking for a while now. You are faced with yet another decision. You have to choose from between two roads again. Do you go LEFT or do you go RIGHT?", "12px Consolas", "#000000");
+            // this._playLabel = new createjs.Text("You continue your quest for the HOT CHOCOLATE. \r\n You have been walking for a while now. You are faced with yet another decision. You have to choose from between two roads again. Do you go LEFT or do you go RIGHT?", "12px Consolas", "#000000");
+            this._playLabel = new createjs.Text("", "12px Consolas", "#000000");
+            this._playLabel.text = "hello world \n\n";
+            this._playLabel.text += "this is albert";
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
             this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
             this._playLabel.x = config.Screen.CENTER_X;
