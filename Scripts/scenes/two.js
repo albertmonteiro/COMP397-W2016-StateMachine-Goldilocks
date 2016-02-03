@@ -23,12 +23,12 @@ var scenes;
             this._playLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._playLabel);
             // add the LEFT button to the PLAY scene
-            this._leftButton = new objects.Button("LeftButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y - 40);
+            this._leftButton = new objects.Button("LeftButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 100);
             this.addChild(this._leftButton);
             // LEFT Button event listener
             this._leftButton.on("click", this._leftButtonClick, this);
             // add the RIGHT button to the PLAY scene
-            this._rightButton = new objects.Button("RightButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y - 40);
+            this._rightButton = new objects.Button("RightButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 100);
             this.addChild(this._rightButton);
             // RIGHT Button event listener
             this._rightButton.on("click", this._rightButtonClick, this);
