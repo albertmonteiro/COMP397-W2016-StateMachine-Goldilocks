@@ -17,9 +17,9 @@ module scenes {
         public start(): void {
 
             // add the PLAY label to the scene
-            this._playLabel = new createjs.Text("", "14px Consolas", "#000000");
-            this._playLabel.text = "hello world \n\n";
-            this._playLabel.text += "this is albert";
+            this._playLabel = new createjs.Text("", "30px Consolas", "#000000");
+            this._playLabel.text += "A big bear jumps out and  \n\n";
+            this._playLabel.text += "eats you up! \n\n";
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
             this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
             this._playLabel.x = config.Screen.CENTER_X;

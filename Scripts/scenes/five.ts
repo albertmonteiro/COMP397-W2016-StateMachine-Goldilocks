@@ -17,19 +17,19 @@ module scenes {
         public start(): void {
 
             // add the PLAY label to the scene
-            this._playLabel = new createjs.Text("", "14px Consolas", "#000000");
-            this._playLabel.text = "You chose to take the more dangerous looking road. As you \n\n";
-            this._playLabel.text += "walk you can hear the sound of a bear. You become ever \n\n";
-            this._playLabel.text += "more cautious. You are now walking on tippy toes. You \n\n";
-            this._playLabel.text += "are faced with another intersection. \n\n";
+            this._playLabel = new createjs.Text("", "20px Consolas", "#000000");
+            this._playLabel.text += "You chose to take the more dangerous looking road. As \n\n";
+            this._playLabel.text += "you walk you can hear the sound of a bear. You become \n\n";
+            this._playLabel.text += "ever more cautious. You are now walking on tippy toes. \n\n";
+            this._playLabel.text += "You are faced with another intersection. \n\n";
             this._playLabel.text += "\n\n";
             this._playLabel.text += "The road going LEFT is a narrow yellow brick road and \n\n";
             this._playLabel.text += "the road going RIGHT is a wide green road. Do you go \n\n";
             this._playLabel.text += "LEFT or do you go RIGHT? \n\n";
-            this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
-            this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
-            this._playLabel.x = config.Screen.CENTER_X;
-            this._playLabel.y = config.Screen.CENTER_Y;
+            // this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
+            // this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
+            // this._playLabel.x = config.Screen.CENTER_X;
+            // this._playLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._playLabel);
 
             // add the LEFT button to the PLAY scene
