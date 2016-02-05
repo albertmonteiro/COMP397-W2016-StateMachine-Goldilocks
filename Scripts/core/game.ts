@@ -15,18 +15,18 @@ var over:scenes.Over;
 var one:scenes.One;
 var two:scenes.Two;
 var three:scenes.Three;
-var three:scenes.Four;
-var three:scenes.Five;
-var three:scenes.Six;
-var three:scenes.Seven;
-var three:scenes.Eight;
-var three:scenes.Nine;
-var three:scenes.Ten;
-var three:scenes.Eleven;
-var three:scenes.Twelve;
-var three:scenes.Thirteen;
-var three:scenes.Fourteen;
-var three:scenes.Fifteen;
+var four:scenes.Four;
+var five:scenes.Five;
+var six:scenes.Six;
+var seven:scenes.Seven;
+var eight:scenes.Eight;
+var nine:scenes.Nine;
+var ten:scenes.Ten;
+var eleven:scenes.Eleven;
+var twelve:scenes.Twelve;
+var thirteen:scenes.Thirteen;
+var fourteen:scenes.Fourteen;
+var fifteen:scenes.Fifteen;
 
 function init():void {
     // create a reference the HTML canvas Element
