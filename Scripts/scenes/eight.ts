@@ -26,13 +26,13 @@ module scenes {
             this._playLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._playLabel);
 
-            // // add the LEFT button to the PLAY scene
-            // this._leftButton = new objects.Button(
-            //     "SadFace",
-            //     config.Screen.CENTER_X - 100,
-            //     config.Screen.CENTER_Y + 170);
-            // this.addChild(this._leftButton);
-            // // LEFT Button event listener
+            // add the LEFT button to the PLAY scene
+            this._leftButton = new objects.Button(
+                "SadFace",
+                config.Screen.CENTER_X - 100,
+                config.Screen.CENTER_Y + 170);
+            this.addChild(this._leftButton);
+            // LEFT Button event listener
             // this._leftButton.on("click", this._leftButtonClick, this);
 
             // add the RIGHT button to the PLAY scene
