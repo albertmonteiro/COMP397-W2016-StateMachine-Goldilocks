@@ -8,6 +8,7 @@ canvas {
     text-align: center;
     margin-left: 10%;
     background-color: white;
+    background-image: url("../Assets/images/background.png");
 }
 
 .game {
