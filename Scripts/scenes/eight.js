@@ -16,7 +16,7 @@ var scenes;
         // Start Method
         Eight.prototype.start = function () {
             // add the PLAY label to the scene
-            this._playLabel = new createjs.Text("", "20px Consolas", "#000000");
+            this._playLabel = new createjs.Text("", "25px Consolas", "#000000");
             this._playLabel.text += "A big bear jumps out and eats you up!  \n\n";
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
             this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
