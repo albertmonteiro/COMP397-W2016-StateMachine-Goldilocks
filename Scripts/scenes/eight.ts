@@ -18,8 +18,7 @@ module scenes {
 
             // add the PLAY label to the scene
             this._playLabel = new createjs.Text("", "20px Consolas", "#000000");
-            this._playLabel.text += "A big bear jumps out and  \n\n";
-            this._playLabel.text += "eats you up! \n\n";
+            this._playLabel.text += "A big bear jumps out and eats you up!  \n\n";
             this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
             this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
             this._playLabel.x = config.Screen.CENTER_X;
@@ -33,7 +32,7 @@ module scenes {
                 config.Screen.CENTER_Y + 170);
             this.addChild(this._leftButton);
             // LEFT Button event listener
-            // this._leftButton.on("click", this._leftButtonClick, this);
+            this._leftButton.on("click", this._leftButtonClick, this);
 
             // add the RIGHT button to the PLAY scene
             this._rightButton = new objects.Button(
