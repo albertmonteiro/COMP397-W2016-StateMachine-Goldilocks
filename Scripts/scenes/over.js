@@ -36,11 +36,12 @@ var scenes;
         //EVENT HANDLERS ++++++++++++++++++++
         // BACK Button click event handler
         Over.prototype._backButtonClick = function (event) {
-            // Switch to the OVER Scene
-            scene = config.Scene.MENU;
+            // Switch to the ONE Scene
+            scene = config.Scene.ONE;
             changeScene();
         };
         return Over;
-    })(objects.Scene);
+    }(objects.Scene));
     scenes.Over = Over;
 })(scenes || (scenes = {}));
+//# sourceMappingURL=over.js.map

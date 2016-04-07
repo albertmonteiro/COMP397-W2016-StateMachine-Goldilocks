@@ -12,18 +12,18 @@ var over;
 var one;
 var two;
 var three;
-var three;
-var three;
-var three;
-var three;
-var three;
-var three;
-var three;
-var three;
-var three;
-var three;
-var three;
-var three;
+var four;
+var five;
+var six;
+var seven;
+var eight;
+var nine;
+var ten;
+var eleven;
+var twelve;
+var thirteen;
+var fourteen;
+var fifteen;
 function init() {
     // create a reference the HTML canvas Element
     canvas = document.getElementById("canvas");
@@ -194,3 +194,4 @@ function changeScene() {
     }
     console.log(currentScene.numChildren);
 }
+//# sourceMappingURL=game.js.map

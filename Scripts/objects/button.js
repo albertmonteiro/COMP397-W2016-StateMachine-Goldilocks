@@ -13,7 +13,7 @@ var objects;
             this.x = x;
             this.y = y;
             this.width = 150;
-            this.height = 50
+            this.height = 50;
             this.regX = this.width * 0.5;
             this.regY = this.height * 0.5;
             this.on("mouseover", this.overButton, this);
@@ -29,7 +29,7 @@ var objects;
             event.currentTarget.alpha = 1.0;
         };
         return Button;
-    })(createjs.Bitmap);
+    }(createjs.Bitmap));
     objects.Button = Button;
 })(objects || (objects = {}));
 //# sourceMappingURL=button.js.map

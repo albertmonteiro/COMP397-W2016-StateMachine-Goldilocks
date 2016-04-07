@@ -26,7 +26,7 @@ var scenes;
             this._gameLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._gameLabel);
             // add the START button to the MENU scene
-            this._startButton = new objects.Button("StartButton", config.Screen.CENTER_X, config.Screen.CENTER_Y + 170);
+            this._startButton = new objects.Button("StartButton", config.Screen.CENTER_X + 20, config.Screen.CENTER_Y + 120);
             this.addChild(this._startButton);
             // START Button event listener
             this._startButton.on("click", this._startButtonClick, this);
@@ -39,11 +39,17 @@ var scenes;
         //EVENT HANDLERS ++++++++++++++++++++
         // START Button click event handler
         Menu.prototype._startButtonClick = function (event) {
+            // Play Background music
+            var audioFile = document.createElement("audio");
+            audioFile.src = "../../Assets/audio/background.mp3";
+            audioFile.loop = true;
+            audioFile.play();
             // Switch to the PLAY Scene
             scene = config.Scene.ONE;
             changeScene();
         };
         return Menu;
-    })(objects.Scene);
+    }(objects.Scene));
     scenes.Menu = Menu;
 })(scenes || (scenes = {}));
+//# sourceMappingURL=menu.js.map

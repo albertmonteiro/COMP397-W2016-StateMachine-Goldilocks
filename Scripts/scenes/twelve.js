@@ -25,7 +25,7 @@ var scenes;
             // this._playLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._playLabel);
             // add the LEFT button to the PLAY scene
-            this._leftButton = new objects.Button("SadFace", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 170);
+            this._leftButton = new objects.Button("SadFace", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 150);
             this.addChild(this._leftButton);
             // LEFT Button event listener
             this._leftButton.on("click", this._leftButtonClick, this);
@@ -49,11 +49,12 @@ var scenes;
         };
         // BACK Button click event handler
         Twelve.prototype._rightButtonClick = function (event) {
-            // Switch to the MENU Scene
-            scene = config.Scene.MENU;
+            // Switch to the ONE Scene
+            scene = config.Scene.ONE;
             changeScene();
         };
         return Twelve;
-    })(objects.Scene);
+    }(objects.Scene));
     scenes.Twelve = Twelve;
 })(scenes || (scenes = {}));
+//# sourceMappingURL=twelve.js.map

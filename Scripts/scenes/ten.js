@@ -24,7 +24,7 @@ var scenes;
             this._playLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._playLabel);
             // add the LEFT button to the PLAY scene
-            this._leftButton = new objects.Button("HotChocolate", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 170);
+            this._leftButton = new objects.Button("HotChocolate", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 150);
             this.addChild(this._leftButton);
             // LEFT Button event listener
             this._leftButton.on("click", this._leftButtonClick, this);
@@ -48,11 +48,12 @@ var scenes;
         };
         // BACK Button click event handler
         Ten.prototype._rightButtonClick = function (event) {
-            // Switch to the MENU Scene
-            scene = config.Scene.MENU;
+            // Switch to the ONE Scene
+            scene = config.Scene.ONE;
             changeScene();
         };
         return Ten;
-    })(objects.Scene);
+    }(objects.Scene));
     scenes.Ten = Ten;
 })(scenes || (scenes = {}));
+//# sourceMappingURL=ten.js.map

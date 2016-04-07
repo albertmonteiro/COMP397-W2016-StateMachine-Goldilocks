@@ -29,7 +29,7 @@ module scenes {
             this._leftButton = new objects.Button(
                 "HotChocolate",
                 config.Screen.CENTER_X - 100,
-                config.Screen.CENTER_Y + 170);
+                config.Screen.CENTER_Y + 150);
             this.addChild(this._leftButton);
             // LEFT Button event listener
             this._leftButton.on("click", this._leftButtonClick, this);
@@ -66,8 +66,8 @@ module scenes {
         
         // BACK Button click event handler
         private _rightButtonClick(event: createjs.MouseEvent) {
-            // Switch to the MENU Scene
-            scene = config.Scene.MENU;
+            // Switch to the ONE Scene
+            scene = config.Scene.ONE;
             changeScene();
         }
     }

@@ -30,12 +30,12 @@ var scenes;
             // this._playLabel.y = config.Screen.CENTER_Y;
             this.addChild(this._playLabel);
             // add the LEFT button to the PLAY scene
-            this._leftButton = new objects.Button("LeftButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 170);
+            this._leftButton = new objects.Button("LeftButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 150);
             this.addChild(this._leftButton);
             // LEFT Button event listener
             this._leftButton.on("click", this._leftButtonClick, this);
             // add the RIGHT button to the PLAY scene
-            this._rightButton = new objects.Button("RightButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 170);
+            this._rightButton = new objects.Button("RightButton", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 150);
             this.addChild(this._rightButton);
             // RIGHT Button event listener
             this._rightButton.on("click", this._rightButtonClick, this);
@@ -59,6 +59,7 @@ var scenes;
             changeScene();
         };
         return Seven;
-    })(objects.Scene);
+    }(objects.Scene));
     scenes.Seven = Seven;
 })(scenes || (scenes = {}));
+//# sourceMappingURL=seven.js.map

@@ -29,8 +29,8 @@ module scenes {
             // add the START button to the MENU scene
             this._startButton = new objects.Button(
                 "StartButton", 
-                config.Screen.CENTER_X, 
-                config.Screen.CENTER_Y + 170);
+                config.Screen.CENTER_X + 20, 
+                config.Screen.CENTER_Y + 120);
             this.addChild(this._startButton);
             
             // START Button event listener
@@ -50,6 +50,12 @@ module scenes {
         
         // START Button click event handler
         private _startButtonClick(event:createjs.MouseEvent) {
+            // Play Background music
+            var audioFile = document.createElement("audio");
+            audioFile.src = "../../Assets/audio/background.mp3";
+            audioFile.loop = true;
+            audioFile.play();
+            
             // Switch to the PLAY Scene
             scene = config.Scene.ONE;
             changeScene();

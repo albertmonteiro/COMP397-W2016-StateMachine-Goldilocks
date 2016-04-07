@@ -48,8 +48,8 @@ module scenes {
         
         // BACK Button click event handler
         private _backButtonClick(event: createjs.MouseEvent) {
-            // Switch to the OVER Scene
-            scene = config.Scene.MENU;
+            // Switch to the ONE Scene
+            scene = config.Scene.ONE;
             changeScene();
         }
     }

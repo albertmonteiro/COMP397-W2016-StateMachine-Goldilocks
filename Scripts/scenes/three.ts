@@ -34,7 +34,7 @@ module scenes {
             this._leftButton = new objects.Button(
                 "LeftButton",
                 config.Screen.CENTER_X - 100,
-                config.Screen.CENTER_Y + 170);
+                config.Screen.CENTER_Y + 150);
             this.addChild(this._leftButton);
             // LEFT Button event listener
             this._leftButton.on("click", this._leftButtonClick, this);
@@ -43,7 +43,7 @@ module scenes {
             this._rightButton = new objects.Button(
                 "RightButton",
                 config.Screen.CENTER_X + 100,
-                config.Screen.CENTER_Y + 170);
+                config.Screen.CENTER_Y + 150);
             this.addChild(this._rightButton);
            
             // RIGHT Button event listener
