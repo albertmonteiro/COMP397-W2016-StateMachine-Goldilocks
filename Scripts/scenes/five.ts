@@ -2,9 +2,9 @@
 module scenes {
     export class Five extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
-        private _playLabel: createjs.Text;
         private _leftButton: objects.Button;
         private _rightButton: objects.Button;
+        private _backgroundImage: createjs.Bitmap;
         
         // CONSTRUCTOR ++++++++++++++++++++++
         constructor() {
@@ -15,22 +15,9 @@ module scenes {
         
         // Start Method
         public start(): void {
-
-            // add the PLAY label to the scene
-            this._playLabel = new createjs.Text("", "20px Consolas", "#000000");
-            this._playLabel.text += "You chose to take the more dangerous looking road. As \n\n";
-            this._playLabel.text += "you walk you can hear the sound of a bear. You become \n\n";
-            this._playLabel.text += "ever more cautious. You are now walking on tippy toes. \n\n";
-            this._playLabel.text += "You are faced with another intersection. \n\n";
-            this._playLabel.text += "\n\n";
-            this._playLabel.text += "The road going LEFT is a narrow yellow brick road and \n\n";
-            this._playLabel.text += "the road going RIGHT is a wide green road. Do you go \n\n";
-            this._playLabel.text += "LEFT or do you go RIGHT? \n\n";
-            // this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
-            // this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
-            // this._playLabel.x = config.Screen.CENTER_X;
-            // this._playLabel.y = config.Screen.CENTER_Y;
-            this.addChild(this._playLabel);
+            // Adding background image with text
+            this._backgroundImage = new createjs.Bitmap("../../Assets/images/backgroundSceneFive.png");
+            this.addChild(this._backgroundImage);
 
             // add the LEFT button to the PLAY scene
             this._leftButton = new objects.Button(
@@ -47,7 +34,6 @@ module scenes {
                 config.Screen.CENTER_X + 100,
                 config.Screen.CENTER_Y + 150);
             this.addChild(this._rightButton);
-           
             // RIGHT Button event listener
             this._rightButton.on("click", this._rightButtonClick, this);
 

@@ -15,15 +15,9 @@ var scenes;
         // PUBLIC METHODS +++++++++++++++++++++
         // Start Method
         Thirteen.prototype.start = function () {
-            // add the PLAY label to the scene
-            this._playLabel = new createjs.Text("", "20px Consolas", "#000000");
-            this._playLabel.text += "You decided to take the dark orange road. A bear was \n\n";
-            this._playLabel.text += "lurking around this area. It jumps out and eats you up! \n\n";
-            // this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
-            // this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
-            // this._playLabel.x = config.Screen.CENTER_X;
-            // this._playLabel.y = config.Screen.CENTER_Y;
-            this.addChild(this._playLabel);
+            // Adding background image with text
+            this._backgroundImage = new createjs.Bitmap("../../Assets/images/backgroundSceneThirteen.png");
+            this.addChild(this._backgroundImage);
             // add the LEFT button to the PLAY scene
             this._leftButton = new objects.Button("SadFace", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 150);
             this.addChild(this._leftButton);

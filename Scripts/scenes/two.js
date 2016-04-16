@@ -15,22 +15,9 @@ var scenes;
         // PUBLIC METHODS +++++++++++++++++++++
         // Start Method
         Two.prototype.start = function () {
-            // add the PLAY label to the scene
-            this._playLabel = new createjs.Text("", "20px Consolas", "#000000");
-            this._playLabel.text += "You continue your quest for the hot chocolate. You have \n\n";
-            this._playLabel.text += "been walking for a while now. You are faced with yet \n\n";
-            this._playLabel.text += "another decision. You have to choose from between two \n\n";
-            this._playLabel.text += "roads again. \n\n";
-            this._playLabel.text += "\n\n";
-            this._playLabel.text += "The road going LEFT is well lit up; however, the road \n\n";
-            this._playLabel.text += "going RIGHT has a strong smell of hot chocolate but you \n\n";
-            this._playLabel.text += "can hear the sound of a bear coming from this road. \n\n";
-            this._playLabel.text += "Do you go LEFT or do you go RIGHT? \n\n";
-            // this._playLabel.regX = this._playLabel.getMeasuredWidth() * 0.5;
-            // this._playLabel.regY = this._playLabel.getMeasuredHeight() * 0.5;
-            // this._playLabel.x = config.Screen.CENTER_X;
-            // this._playLabel.y = config.Screen.CENTER_Y;
-            this.addChild(this._playLabel);
+            // Adding background image with text
+            this._backgroundImage = new createjs.Bitmap("../../Assets/images/backgroundSceneTwo.png");
+            this.addChild(this._backgroundImage);
             // add the LEFT button to the PLAY scene
             this._leftButton = new objects.Button("LeftButton", config.Screen.CENTER_X - 100, config.Screen.CENTER_Y + 150);
             this.addChild(this._leftButton);
